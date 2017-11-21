@@ -1,0 +1,69 @@
+﻿body {
+    margin: 0px 0px 0px 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+}
+
+li {
+    float: right;
+    text-decoration: none;
+    height: 41px;
+}
+
+#ofe {
+
+}
+
+#ofe:hover {
+     background-color: #ddd;
+}
+a {
+    text-decoration: none;
+    color: #666;
+    text-align: center;
+    display: block;
+    padding: 14px 16px;
+    height: 33px;
+}
+
+li a:hover {
+    background-color: #ddd;
+}
+
+.foto {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.perfil {
+
+    text-align:center;
+    float:left;
+    width:25%;
+    
+}
+    
+.ver-perfil {
+    padding:0px 0px 0px 0px;
+}
+.contenedor2 {
+    width:100%;
+
+    
+}
+.centro {
+    float:left;
+    width:40%;
+}
+.ofertas {
+    float:left;
+    width:auto;
+    height:auto;
+}
