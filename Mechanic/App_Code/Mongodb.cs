@@ -163,4 +163,38 @@ public class Mongodb
         }
         return documentos.ToArray();
     }
+
+    public string[] Mecanicos()
+    {
+        String[] val;
+        String collecion = "UserF";
+        List<String> documentos = new List<String>();
+        var col = connect().GetCollection<BsonDocument>(collecion);
+        BsonDocument buscar = new BsonDocument {};
+        var cursor = col.Find(buscar).ToCursor();
+        foreach (var document in cursor.ToEnumerable())
+        {
+            if (document == null)
+            {
+                return val = new String[] { "null" };
+            }
+            else
+            {
+                String resultado = document.ToString();
+                for (int i = 0; i <= 1; i++)
+                {
+                    if (i == 0)
+                    {
+                        resultado = resultado.Replace("{", "");
+                    }
+                    else
+                    {
+                        resultado = resultado.Replace("}", "");
+                    }
+                }
+                documentos.Add(resultado);
+            }
+        }
+        return documentos.ToArray();
+    }
 }

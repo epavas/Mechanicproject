@@ -17,9 +17,9 @@ public partial class Registro : System.Web.UI.Page
         Mongodb bd = new Mongodb();
         try
         {
-            if (Int32.Parse(semestre.Text) > 10)
+            if (Int32.Parse(experiencia.Text).Equals(""))
             {
-                mensaje("Numero de semestres invalido");
+                mensaje("Años de experiencia no valido invalido");
 
 
             }
@@ -33,14 +33,16 @@ public partial class Registro : System.Web.UI.Page
            {"Apellido",ape.Text },
            {"Correo",correo.Text },
            {"Contraseña",contra.Text },
-           {"Semestre",semestre.Text }
+           {"Especialidad",carrerasop.SelectedItem.ToString() },
+           {"Semestre",experiencia.Text }
            };
                     BsonDocument documento2 = new BsonDocument
            {
            {"Nombre", nom.Text },
            {"Apellido",ape.Text },
            {"Correo",correo.Text },
-           {"Semestre",semestre.Text }
+           {"Especialidad",carrerasop.SelectedItem.ToString() },
+           {"Semestre",experiencia.Text }
            };
                     bd.insert("User", documento);
                     bd.insert("UserF", documento2);
@@ -48,12 +50,14 @@ public partial class Registro : System.Web.UI.Page
                     Session["Usuario"] = nom.Text;
                     Session["Apellido"] = ape.Text;
                     Session["Correo"] = correo.Text;
-                    Session["Semestre"] = semestre.Text;
+                    Session["Carrera"] = carrerasop.SelectedItem.ToString();
+                    Session["Semestre"] = experiencia.Text;
                     nom.Text = "";
                     ape.Text = "";
                     correo.Text = "";
                     contra.Text = "";
-                    semestre.Text = "";
+                    carrerasop.SelectedValue = "1";
+                    experiencia.Text = "";
                     Response.Redirect("Index.aspx");
                 }
                 else
@@ -64,8 +68,9 @@ public partial class Registro : System.Web.UI.Page
         }
         catch (Exception)
         {
+            mensaje("Campos no validos ");
+            //throw;
 
-            throw;
         }
 
 

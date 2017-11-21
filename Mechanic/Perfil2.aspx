@@ -68,9 +68,9 @@
                     <li>
                         <asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">Cerrar Sesión</asp:LinkButton></li>
                     <li>
-                        <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">Buscar Amigos</asp:LinkButton></li>
+                        <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">Buscar Mecanico</asp:LinkButton></li>
                     <li style="height: 20px;">
-                        <asp:LinkButton ID="LinkButton6" runat="server" OnClick="LinkButton6_Click">Buscar Empleos</asp:LinkButton></li>
+                        </li>
                     <!--<li style="padding-right: 50px;">
                         <asp:LinkButton ID="LinkButton5" runat="server" OnClick="LinkButton5_Click"></asp:LinkButton>
                     </li>
@@ -94,9 +94,9 @@
                             <br />
                             <asp:Label ID="Label2" runat="server" Text="Apellido: "></asp:Label>&nbsp;<asp:Label ID="Label6" runat="server" Text="Label"></asp:Label>
                             <br />
-                            <asp:Label ID="Label3" runat="server" Text="Carrera: "></asp:Label>&nbsp;<asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
+                            <asp:Label ID="Label3" runat="server" Text="Especialidad: "></asp:Label>&nbsp;<asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
                             <br />
-                            <asp:Label ID="Label4" runat="server" Text="Semestre: "></asp:Label>&nbsp;<asp:Label ID="Label8" runat="server" Text="Label"></asp:Label>
+                            <asp:Label ID="Label4" runat="server" Text="Esperiencia: "></asp:Label>&nbsp;<asp:Label ID="Label8" runat="server" Text="Label"></asp:Label>
                             <br />
                         </p>
                     </div>
@@ -109,7 +109,7 @@
                     <div class="card-block">
                         <h4 class="card-title">Trabajos</h4>
                         <p class="card-text">
-                            <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Subir Trabajos</asp:LinkButton>
+                            <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Subir Comentarios</asp:LinkButton>
 
 
                             <asp:GridView ID="GridView1" runat="server" AllowPaging="True" BorderStyle="Solid" BorderWidth="1px" CellPadding="4" ForeColor="#333333" GridLines="Vertical" PageSize="5" Width="100%" BorderColor="#333333" OnPageIndexChanging="GridView1_PageIndexChanging">

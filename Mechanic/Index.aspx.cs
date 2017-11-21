@@ -21,17 +21,17 @@ public partial class Index : System.Web.UI.Page
             else
             {
                 nombre.Text = Session["Usuario"].ToString() + " " + Session["Apellido"].ToString();
-                carrera.Text = Session["Carrera"].ToString();
                 dt.Columns.Add("Codigo");
-                dt.Columns.Add("Empresa");
-                dt.Columns.Add("Nombre Contacto");
-                dt.Columns.Add("Tel Contacto");
-                dt.Columns.Add("Descripcion");
-                dt.Columns.Add("Carrera");
-                dt.Columns.Add("Salario");
-                String[] datos = bd.ofertas("Oferta", "Carrera", carrera.Text);
+                dt.Columns.Add("Nombre");
+                dt.Columns.Add("Apellido");
+                dt.Columns.Add("Correo");
+                dt.Columns.Add("Especialidad");
+                dt.Columns.Add("Años de experiencia");
+                //dt.Columns.Add("Salario");
+                String[] datos = bd.Mecanicos();
                 for (int i = 0; i < datos.Length; i++)
                 {
+                    //estamos en los usuarios ahora colocamos cada dato
                     String[] aux = datos[i].Split(',');
                     for (int j = 0; j < aux.Length; j++)
                     {
@@ -88,7 +88,14 @@ public partial class Index : System.Web.UI.Page
     protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
     {
         int f = GridView1.SelectedIndex;
-        String a = GridView1.Rows[f].Cells[3].Text;
+        HttpCookie datos = new HttpCookie("datos");
+        datos.Values["Nombre"] = GridView1.Rows[f].Cells[2].Text;
+        datos.Values["Apellido"] = GridView1.Rows[f].Cells[3].Text;
+        datos.Values["Correo"] = GridView1.Rows[f].Cells[4].Text;
+        datos.Values["Carrera"] = GridView1.Rows[f].Cells[5].Text;
+        datos.Values["Semestre"] = GridView1.Rows[f].Cells[6].Text;
+        Response.Cookies.Add(datos);
+        Response.Redirect("Perfil2.aspx");
         /*Label1.Text = a;*/
     }
 

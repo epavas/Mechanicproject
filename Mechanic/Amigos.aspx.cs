@@ -23,8 +23,8 @@ public partial class Amigos : System.Web.UI.Page
             {
                 RadioButton1.Text = "Nombre";
                 RadioButton2.Text = "Apellido";
-                RadioButton3.Text = "Carrera";
-                RadioButton4.Text = "Semestre";
+                RadioButton3.Text = "Especialidad";
+                RadioButton4.Text = "Experiencia";
             }
         }
         catch (Exception)
@@ -82,8 +82,8 @@ public partial class Amigos : System.Web.UI.Page
                 dt.Columns.Add("Nombre");
                 dt.Columns.Add("Apellido");
                 dt.Columns.Add("Correo");
-                dt.Columns.Add("Carrera");
-                dt.Columns.Add("Semestre");
+                dt.Columns.Add("Especialidad");
+                dt.Columns.Add("Experiencia");
 
                 for (int i = 0; i < datos.Length; i++)
                 {

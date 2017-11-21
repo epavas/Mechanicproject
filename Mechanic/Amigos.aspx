@@ -66,9 +66,7 @@
                     <li>
                         <asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">Cerrar Sesión</asp:LinkButton></li>
                     <li>
-                        <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click1">Buscar Amigos</asp:LinkButton></li>
-                    <li style="height: 20px;">
-                        <asp:LinkButton ID="LinkButton6" runat="server" OnClick="LinkButton6_Click">Buscar Empleos</asp:LinkButton></li>
+                        <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click1">Buscar Mecanico</asp:LinkButton></li>
                     <li style="padding: 0px 100px 0px 0px; float: left;">
                         <a style="background-color: white;" href="Index.aspx">
                             <img alt="" src="Imagenes/logotipo.png" style="width: 80px;" /></a></li>

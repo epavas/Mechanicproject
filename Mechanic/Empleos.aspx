@@ -66,9 +66,9 @@
                     <li>
                         <asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">Cerrar Sesión</asp:LinkButton></li>
                     <li>
-                        <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">Buscar Amigos</asp:LinkButton></li>
+                        <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">Buscar Mecanico</asp:LinkButton></li>
                     <li style="height: 20px;">
-                        <asp:LinkButton ID="LinkButton6" runat="server" OnClick="LinkButton6_Click">Buscar Empleos</asp:LinkButton></li>
+                        </li>
                     <!--<li style="padding-right: 50px;">
                             <asp:LinkButton ID="LinkButton5" runat="server"></asp:LinkButton>
                     </li>
