@@ -30,7 +30,7 @@
                 <asp:TextBox ID="TextBox2" placeholder="Contraseña" runat="server" Height="30px" Width="240px"></asp:TextBox>
                 <br />
                 <br />
-                <asp:Button CssClass="btn" ID="Button1" runat="server" Text="Iniciar Sesión" Font-Names="Berlin Sans FB" Font-Size="Larger" ForeColor="#190000" Height="40px" Width="140px" />
+                <asp:Button CssClass="btn" ID="Button1" runat="server" Text="Iniciar Sesión" Font-Names="Berlin Sans FB" Font-Size="Larger" ForeColor="#190000" Height="40px" Width="140px"/>
                 </div>
                
             </div>
