@@ -32,7 +32,9 @@
                 <br />
                 <asp:Button CssClass="btn" ID="Button1" runat="server" Text="Iniciar Sesión" Font-Names="Berlin Sans FB" Font-Size="Larger" ForeColor="#190000" Height="40px" Width="140px" />
                 </div>
-               
+               //Prueba
+		//lINEA2
+		//lINEA3
             </div>
         </div>
     </form>
